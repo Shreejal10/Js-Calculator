@@ -4,9 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/icon-32.png" type="image/x-icon">
     <title>Java Script Calculator</title>
+    <link rel="stylesheet" href="./output.css">
 </head>
 <body>
-    
+    <div class="w-screen grid justify-center content-center min-h-screen grid-cols-[repeat(4,80px)] md:grid-cols-[repeat(4,100px)] md:grid-rows-[minmax(120px,auto)_repeat(5,100px)] grid-rows-[minmax(80px,auto)_repeat(5,80px)]">
+        <div class="col-[1/-1] bg-[#4B5281] flex items-end justify-around flex-col p-3 break-words break-all">
+            <div data-previous-operand class="text-gray-400 text-2xl"></div>
+            <div data-current-operand class="text-white text-5xl"></div>
+        </div>
+        <button data-all-clear class="bg-[#727AAC] hover:bg-[#535B8D] cursor-pointer border-2 border-white col-span-2 ">AC</button>
+        <button data-delete class="bg-[#727AAC] hover:bg-[#535B8D] cursor-pointer border-2 border-white">DEL</button>
+        <button data-operation class="bg-[#727AAC] hover:bg-[#535B8D] cursor-pointer border-2 border-white">÷</button>
+        <button data-number class="bg-[#727AAC] hover:bg-[#535B8D] cursor-pointer border-2 border-white">1</button>
+        <button data-number class="bg-[#727AAC] hover:bg-[#535B8D] cursor-pointer border-2 border-white">2</button>
+        <button data-number class="bg-[#727AAC] hover:bg-[#535B8D] cursor-pointer border-2 border-white">3</button>
+        <button data-operation class="bg-[#727AAC] hover:bg-[#535B8D] cursor-pointer border-2 border-white">*</button>
+        <button data-number class="bg-[#727AAC] hover:bg-[#535B8D] cursor-pointer border-2 border-white">4</button>
+        <button data-number class="bg-[#727AAC] hover:bg-[#535B8D] cursor-pointer border-2 border-white">5</button>
+        <button data-number class="bg-[#727AAC] hover:bg-[#535B8D] cursor-pointer border-2 border-white">6</button>
+        <button data-operation class="bg-[#727AAC] hover:bg-[#535B8D] cursor-pointer border-2 border-white">+</button>
+        <button data-number class="bg-[#727AAC] hover:bg-[#535B8D] cursor-pointer border-2 border-white">7</button>
+        <button data-number class="bg-[#727AAC] hover:bg-[#535B8D] cursor-pointer border-2 border-white">8</button>
+        <button data-number class="bg-[#727AAC] hover:bg-[#535B8D] cursor-pointer border-2 border-white">9</button>
+        <button data-operation class="bg-[#727AAC] hover:bg-[#535B8D] cursor-pointer border-2 border-white">–</button>
+        <button data-number class="bg-[#727AAC] hover:bg-[#535B8D] cursor-pointer border-2 border-white">.</button>
+        <button data-number class="bg-[#727AAC] hover:bg-[#535B8D] cursor-pointer border-2 border-white">0</button>
+        <button data-equals class="bg-[#727AAC] hover:bg-[#535B8D] cursor-pointer border-2 border-white col-span-2">=</button>
+    </div>
+
+    <script src="./script.js"></script>
 </body>
 </html>
